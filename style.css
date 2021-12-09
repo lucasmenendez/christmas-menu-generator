@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Kalam', cursive;
+    font-weight: 300;
+    font-size: 20px;
+    background: #16a085;
+}
+
+header { text-align: center; }
+
+main {
+    display: block;
+    margin: 200px auto;
+
+    width: 90%;
+    max-width: 900px;
+    background-color: #faf8ef;
+    position: relative;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    z-index: -1;
+    background: repeating-linear-gradient(-45deg,
+        #f00 0, #f00 2%,
+        #fff 2%, #fff 4%
+    );
+
+    box-shadow: 0px 10px 30px -15px rgba(0,0,0,0.75);
+}
+
+main h2 {
+    text-align: center;
+}
+
+main .users {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .users label {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 20px;
+    border: 3px solid #bbb;
+    color: #444;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+main .users input:checked + label {
+    border: 3px solid #f39c12;
+    color: #d35400;
+    font-weight: bold;
+}
+
+main .users input {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+main .token input {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+    font-weight: 300;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    border: 3px dashed #aaa;
+    transition: all .2s ease-in-out;
+}
+
+main .token input:hover,
+main .token input:focus,
+main .token input:active {
+    box-shadow: 0px 10px 30px -20px rgba(0,0,0,0.75);
+}
+
+main #form button[type="submit"] {
+    display: block;
+    margin: 50px auto;
+    width: 80%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+    background: #27ae60;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10000px;
+    box-shadow: 0px 10px 30px -20px rgba(0,0,0,0.75);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+main #form button[type="submit"]:hover,
+main #form button[type="submit"]:active {
+    background: #2ecc71;
+}
+
+main h5 {
+    text-align: center;
+    font-size: 20px;
+    color: #8e44ad;
+}

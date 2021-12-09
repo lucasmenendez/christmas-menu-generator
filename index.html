@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Christmas menu generator 🎄</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎄</text></svg>">
+        <link rel="stylesheet" href="style.css"> 
+        <script type="module" src="main.js"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>🎄 Christmas menu generator 🎄</h1>
+                <div class="introduction">
+                    <p>Welcome to the menu generator web app for our Christmas Dinner! This app contains few propouses for the dinner meal.</p>
+                    <p>Selecting your name, the app will suggest to you 3 options randomly for your assigned menu dish.</p>
+                    <p>Then, you must surprise the rest of us by preparing at least one of the suggestions. Be sure to prepare enough for everyone!</p>
+                    <p><b>You only have one opportunity to generate suggestions.</b> Don't try to break the app, I'm watching you... 👀</p>
+                </div>
+            </header>
+
+            <section>
+                <form id="form">
+                    <h2>Confirm your identity</h2>
+                    <h3>I am...</h3>
+                    <div class="users">
+                        <input type="radio" id="Marco" name="user" value="Marco"/>
+                        <label for="Marco">Marco ⚽</label>
+                        <input type="radio" id="Marian" name="user" value="Marian"/>
+                        <label for="Marian">Marian 🇷🇴</label>
+                        <input type="radio" id="Carlos" name="user" value="Carlos"/>
+                        <label for="Carlos">Carlos 🏘️</label>
+                        <input type="radio" id="Lucas" name="user" value="Lucas"/>
+                        <label for="Lucas">Lucas 👟</label>
+                    </div>
+
+                    <h3>Type your identity token</h3>
+                    <div class="token">
+                        <p>Check your email to get your identity token</p>
+                        <input id="token" type="text" placeholder="Type here your security token..."/>
+                    </div>
+
+                    <button type="submit">Generate the suggestions</button>
+                </form>
+
+                <div class="results">
+                    <h2>Your suggestions are...</h2>
+                    <h3 id="dish"></h3>
+                    <ul id="suggestions">Complete the form to know your suggestions!</ul>
+
+                    <h5>🟡 Save your suggestions!! 🟡</h5>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
